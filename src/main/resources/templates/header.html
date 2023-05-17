@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <link rel="stylesheet" th:href="@{/assets/css/header.css}" />
 </head>
+
 <body>
-$END$
+
+<header class="fixed-top">
+  <h2>CampusQ</h2>
+  <nav>
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Ask</a>
+    <a href="#">Answer</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Login</a>
+    <a href="#">Logout</a>
+  </nav>
+</header>
+
+
 </body>
+
 </html>
