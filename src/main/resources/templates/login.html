@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>login</title>
+  <link rel="stylesheet" th:href="@{/assets/css/styles.css}" />
+  <link rel="stylesheet" th:href="@{/assets/css/header.css}" />
+  <link rel="stylesheet" th:href="@{/assets/css/footer.css}" />
+  <link rel="stylesheet" th:href="@{/assets/css/login.css}" />
+
 </head>
+
 <body>
-$END$
+<div th:replace="header :: header"></div>
+
+<li class="alert alert-danger" role="alert" th:if="${!#strings.isEmpty(errorMessage)}"
+    th:text="${errorMessage}" align="center"></li>
+
+<div class="login-container">
+  <form class="login-form">
+    <h2>Login</h2>
+    <div class="form-group">
+      <input type="email" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="Password" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</div>
+
+<div th:replace="footer :: footer"></div>
 </body>
+
 </html>

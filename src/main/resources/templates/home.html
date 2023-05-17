@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>home</title>
+    <link rel="stylesheet" th:href="@{/assets/css/styles.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/header.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/footer.css}" />
 </head>
 
 <body>
+    <div th:replace="header :: header"></div>
+
     <h1 th:text="'Hello, ' + ${username} + ' Welcome to CampusQ.'"></h1>
+    <p> Home page under maintenance</p>
+
+    <div th:replace="footer :: footer"></div>
 </body>
+
 </html>
