@@ -1,0 +1,39 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #4e98c6;
+}
+
+header {
+  background-color: #102f45;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+header h2 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+header p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+
